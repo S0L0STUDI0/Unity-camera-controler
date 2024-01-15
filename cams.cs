@@ -7,8 +7,6 @@ public class cams : MonoBehaviour
 
     public GameObject Camera1;
     public GameObject Camera2;
-    public GameObject Camera3;
-    public GameObject Camera4;
 
     void Update()
     {
@@ -21,46 +19,18 @@ public class cams : MonoBehaviour
         {
             CameraTwo ();
         }
-        if (Input.GetKeyDown("3"))
-        {
-            CameraThree ();
-        }
-
-         if (Input.GetKeyDown("4"))
-        {
-            CameraFour ();
-        }
     }
 
     void CameraOne()
     {
         Camera1.SetActive(true);
         Camera2.SetActive(false);
-        Camera3.SetActive(false);
-        Camera4.SetActive(false);
     }
 
     void CameraTwo()
     {
         Camera2.SetActive(true);
         Camera1.SetActive(false);
-        Camera3.SetActive(false); 
-        Camera4.SetActive(false);
     }
-
-    void CameraThree()
-    {
-        Camera3.SetActive(true);
-        Camera1.SetActive(false);
-        Camera2.SetActive(false);
-        Camera4.SetActive(false);
-    }
-
-    void CameraFour()
-    {
-        Camera3.SetActive(false);
-        Camera1.SetActive(false);
-        Camera2.SetActive(false);
-        Camera4.SetActive(true);
-    }
+    
 }
